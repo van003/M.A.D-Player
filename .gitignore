@@ -1,0 +1,9 @@
+.settings/
+.classpath
+.project
+build.fxbuild
+.idea/
+bin/
+out/
+*.MF
+MusicPlayer.iml

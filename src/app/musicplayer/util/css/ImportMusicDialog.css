@@ -1,0 +1,24 @@
+.ImportMusicDialog{
+	-fx-background-color: #ffffff;
+}
+
+.button {
+	-fx-background-color: #f2f2f2;
+	-fx-background-radius: 0.0px, 0.0px, 0.0px, 0.0px;
+	-fx-font-family: verdana;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+	-fx-background-color: #dadada;	
+}
+
+.progress-bar > .track {
+	-fx-background-color: #f2f2f2;
+	-fx-background-radius: 0.0px, 0.0px, 0.0px, 0.0px;
+}
+
+.progress-bar > .bar {
+	-fx-background-color: #dadada;
+}

@@ -1,0 +1,265 @@
+.mainWindow {
+    -fx-background-color: #ffffff;
+}
+
+.label, .letter, .text-field {
+    -fx-font-family: verdana;
+    -fx-font-size: 18px;
+}
+
+.text-field, .text-field:focused {
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.letter:hover {
+    -fx-text-fill: #c2c2c2;
+}
+
+.letter:pressed {
+    -fx-text-fill: #dadada;
+}
+
+.bottomBarLabel {
+    -fx-font-family: verdana;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #ffffff;
+}
+
+.sideBarItem:hover, .sideBarItemSelected:hover {
+    -fx-background-color: #dadada;
+}
+
+.sideBarItem:pressed, .sideBarItemSelected:pressed {
+    -fx-background-color: #c2c2c2;
+}
+
+.sideBarItemSelected > .label {
+    -fx-text-fill: rgb(52, 109, 207);
+}
+
+.sideBarItemSelected > .iconContainer > .icon {
+    -fx-fill: rgb(52, 109, 207);
+}
+
+.controlPane:hover > .control,
+.toggleControlPane:hover > .control {
+    -fx-opacity: 0.5;
+}
+
+.controlPane:pressed > .control,
+.toggleControlPane:pressed > .control {
+    -fx-opacity: 0.25;
+}
+
+.toggleControlPane:active {
+    -fx-background-color: rgb(153, 181, 230);
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+    -fx-scale-shape: true;
+    -fx-shape: "
+        M 100, 100
+        m -75, 0
+        a 75,75 0 1,0 150,0
+        a 75,75 0 1,0 -150,0
+        ";
+}
+
+.toggleControlPane:active > .control {
+    -fx-fill: white;
+}
+
+.sideBar {
+    -fx-background-color: #f2f2f2;
+}
+
+.bottomBar {
+    -fx-background-color: rgb(52, 109, 207);
+}
+
+.bottomBarItem:hover {
+    -fx-background-color: rgb(47, 98, 187);
+}
+
+.separator .line {
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #c2c2c2;
+}
+
+.slider .thumb {
+    -fx-background-color: rgb(52, 109, 207);
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-padding: 10;
+    -fx-shape: "
+        M 100, 100
+        m -75, 0
+        a 75,75 0 1,0 150,0
+        a 75,75 0 1,0 -150,0
+        ";
+}
+
+.slider .thumb:hover {
+    -fx-border-color: rgb(153, 181, 230);
+}
+
+.slider .thumb:pressed {
+    -fx-border-color: white;
+}
+
+.slider .track {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 15;
+}
+
+.backSliderTrack {
+    -fx-background-color: white;
+    -fx-opacity: 0.5;
+}
+
+.frontSliderTrack {
+    -fx-background-color: white;
+}
+
+.volumeSlider .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 2;
+    -fx-border-color: rgb(52, 109, 207);
+    -fx-padding: 10;
+    -fx-shape: "
+        M 100, 100
+        m -75, 0
+        a 75,75 0 1,0 150,0
+        a 75,75 0 1,0 -150,0
+        ";
+}
+
+.volumeSlider .thumb:hover {
+    -fx-border-color: rgb(153, 181, 230);
+}
+
+.volumeSlider .thumb:pressed {
+    -fx-border-color: rgb(52, 109, 207);
+}
+
+.volumeSlider .track {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 15;
+}
+
+.volumeSlider:muted .thumb {
+    -fx-border-color: #dadada;
+}
+
+.frontVolumeTrack:muted {
+    -fx-background-color: #dadada;
+}
+
+.backVolumeTrack {
+    -fx-background-color: #dadada;
+}
+
+.frontVolumeTrack {
+    -fx-background-color: rgb(52, 109, 207);
+}
+
+.block {
+    -fx-background-color: rgb(52, 109, 207);
+}
+
+.popup {
+    -fx-background-color: #f2f2f2;
+    -fx-border-width: 2;
+    -fx-border-color: #dadada;
+}
+
+.searchPopup {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 2;
+    -fx-border-color: #dadada;
+}
+
+.volumeIcon {
+    -fx-fill: rgb(52, 109, 207);
+}
+
+.volumeLabel {
+    -fx-text-fill: rgb(52, 109, 207);
+}
+
+.volumeLabel:muted {
+    -fx-text-fill: #dadada;
+}
+
+.volumeIconContainer:hover > .volumeIcon {
+    -fx-fill: rgb(153, 181, 230);
+}
+
+.scroll-pane, .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 0;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}
+
+.playlistBox, .playlistBox > .viewport {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 0;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.context-menu {
+	-fx-background-color: #f2f2f2;
+    -fx-border-width: 2;
+    -fx-border-color: #dadada;
+    -fx-effect: null;
+}
+
+.menu-item:focused {
+    -fx-background-color: #dadada;
+}
+
+.menu-item:pressed {
+    -fx-background-color: #c2c2c2;
+}
+
+.searchBox, .searchBox:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 2;
+    -fx-border-color: #dadada;
+    -fx-accent: rgb(52, 109, 207);
+    -fx-padding: 0 5 0 5;
+}
+
+.searchResult:hover {
+    -fx-background-color: #dadada;
+}
+
+.searchResult:pressed {
+    -fx-background-color: #c2c2c2;
+}
+
+.searchLabel {
+    -fx-font-family: verdana;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-text-fill: black;
+}
